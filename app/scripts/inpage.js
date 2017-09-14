@@ -28,7 +28,7 @@ var inpageProvider = new MetamaskInpageProvider(metamaskStream)
 
 var web3 = new Web3(inpageProvider)
 web3.setProvider = function () {
-  console.log('MetaMask - overrode web3.setProvider')
+  log.debug('MetaMask - overrode web3.setProvider')
 }
 log.debug('MetaMask - injected web3')
 // export global web3, with usage-detection
