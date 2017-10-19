@@ -6,6 +6,7 @@ const LocalMessageDuplexStream = require('post-message-stream')
 // const endOfStream = require('end-of-stream')
 const setupDappAutoReload = require('./lib/auto-reload.js')
 const MetamaskInpageProvider = require('./lib/inpage-provider.js')
+const log = require('loglevel')
 restoreContextAfterImports()
 
 const METAMASK_DEBUG = 'GULP_METAMASK_DEBUG'
